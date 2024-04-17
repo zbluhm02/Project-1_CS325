@@ -4,8 +4,8 @@ import os
 import requests
 from bs4 import BeautifulSoup
 
-def test_print_article():
-    """Tests if the connects to the webiste."""
+def test_print_to_file():
+    """Tests if the program prints to the correct output."""
     url = "https://apnews.com/article/fani-willis-hearing-trump-case-potential-conflict-c37fcf993ac33c150f3cb3e4a7a888db"
     url = url.strip()
     r = requests.get(url)
