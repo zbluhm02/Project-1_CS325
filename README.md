@@ -10,10 +10,14 @@
 9. To add or change what articles it scraps, either add new urls to the input.txt page seperated by new lines or replace the existing urls with new ones.
 
 **What this Program Does:**
- This programs purpose is to scrap down new's articles to only their usable text and then use an API call to summarize the articles and generate a title for them.
+ This programs purpose is to scrap down new's articles to only their usable text and then use an API call to summarize the articles and generate a title for them. It now also includes test cases to make sure individual functions work properly.
 
 **How to create a LLM account:**
 1. For this specific project, we use the openAI API for the calls; so go to the openAI website and make an account (Link: https://platform.openai.com/docs/overview).
 2. Go to API keys and generate a key.
 3. Under module_3 in the sk.py file, change the my_sk variable to whatever your secret key is.
 4. After that, run the program in Git Bash and things should be working. Depending on how many calls you do, it may be neccessary to add funds to openAI as there is a small charge with each use.
+
+**How to Use Test Cases**
+1. To test one of the test cases, you will need to first type "pytest 'TEST_FILE_NAME.py' into the Git Bash console.
+2. If it outputs "TEST_FILE_NAME.py .", then that means the test passed. If it outputs "TEST_FILE_NAME.py F", then that means the test failed.
